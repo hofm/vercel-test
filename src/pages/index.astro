@@ -2,7 +2,7 @@
 import '@/styles/globals.css'
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
-import Form from '@/components/FeedbackForm';
+import FeedbackForm from '@/components/FeedbackForm';
 ---
 
 <Layout title="Welcome to Astro.">
@@ -62,7 +62,7 @@ import Form from '@/components/FeedbackForm';
 				body="Come say hi to our amazing Discord community. ❤️"
 			/>
 		</ul>
-		<Form client:load />
+		<FeedbackForm client:load />
 	</main>
 </Layout>
 
@@ -124,4 +124,3 @@ import Form from '@/components/FeedbackForm';
 		padding: 0;
 	}
 </style>
-@/components/FeedbackForm
